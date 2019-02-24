@@ -6,7 +6,8 @@
         <input type="password" name="pwd" id="pwd"/>
         <input type="submit" id="sub" value="Login"/>
     </form>
-    <div id="echo"></div>
+    <div id="mouse_echo"></div>
+    <div id="key_echo"></div>
 
 <script>
 var tmr = [];
@@ -19,14 +20,35 @@ $('#pwd').keydown(function(evt) {
 $('#pwd').keyup(function(evt) {
     console.log("Key Up on: "+evt.key+" On time: "+evt.timeStamp);
 });
-$('#sub').click(function showDynamic(){ 
-    // it seems that click will be triggered at the time of 'Enter' keyup, so its keyup won't be recorded in tmr list
-    // it will be recorded in console as a pressed key though
+$('#sub').mouseenter(function(evt){ 
+    console.log("Mouse Enter: ("+ evt.pageX+", "+evt.pageY+") On time: "+evt.timeStamp);
+});
+$('#sub').mousedown(function(evt){ 
+    console.log("Mouse Down: ("+ evt.pageX+", "+evt.pageY+") On time: "+evt.timeStamp);
+});
+$('#sub').mouseup(function(evt){ 
+    console.log("Mouse Up: ("+ evt.pageX+", "+evt.pageY+") On time: "+evt.timeStamp);
+});
+$('#sub').mouseleave(function(evt){ 
+    console.log("Mouse Leave: ("+ evt.pageX+", "+evt.pageY+") On time: "+evt.timeStamp);
+});
+
+$('#sub').click(function showDynamic(e){ 
+    // print out mouse (x, y) in the page
+    var offset = $(this).offset();
+    var abs_x = e.pageX;
+    var abs_y = e.pageY;
+    var relative_x = e.pageX - offset.left;
+    var relative_y = e.pageY - offset.top;
+    console.log("Absolute Coordinates: ("+ abs_x+", "+abs_y+"), Relative Coordinates: ("+ relative_x+", "+relative_y+")");
+    $('#mouse_echo').html("Your mouse click Absolute Coordinates: ("+ abs_x+", "+abs_y+"), Relative Coordinates: ("+ relative_x+", "+relative_y+")");
+
+    // print out keys you typed (Enter keyup won't be recorded here)
     var ret = "";
     for(var i = 0; i < tmr.length; i++) {
         ret += tmr[i].key + "("+tmr[i].code+")";
     }
-    $('#echo').html("You have typed: "+ret);
+    $('#key_echo').html("You have typed: "+ret);
 });
 </script>
 
