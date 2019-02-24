@@ -12,15 +12,15 @@
 var tmr = [];
 
 $('#pwd').keydown(function(evt) {
+    tmr.push({"key":evt.key});
     console.log("Key Down on: "+evt.key+" On time: "+evt.timeStamp);
 });
 
 $('#pwd').keyup(function(evt) {
-    tmr.push({"key":evt.key});
     console.log("Key Up on: "+evt.key+" On time: "+evt.timeStamp);
 });
 $('#sub').click(function showDynamic(){ 
-    // it seems that when press Enter key, this will be triggered but "Enter" won't be recorded in tmr list,
+    // it seems that click will be triggered at the time of 'Enter' keyup, so its keyup won't be recorded in tmr list
     // it will be recorded in console as a pressed key though
     var ret = "";
     for(var i = 0; i < tmr.length; i++) {
