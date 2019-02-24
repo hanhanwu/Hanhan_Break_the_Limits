@@ -12,7 +12,7 @@
 var tmr = [];
 
 $('#pwd').keydown(function(evt) {
-    tmr.push({"key":evt.key});
+    tmr.push({"key":evt.key, "code":evt.which});
     console.log("Key Down on: "+evt.key+" On time: "+evt.timeStamp);
 });
 
@@ -24,7 +24,7 @@ $('#sub').click(function showDynamic(){
     // it will be recorded in console as a pressed key though
     var ret = "";
     for(var i = 0; i < tmr.length; i++) {
-        ret += tmr[i].key;
+        ret += tmr[i].key + "("+tmr[i].code+")";
     }
     $('#echo').html("You have typed: "+ret);
 });
