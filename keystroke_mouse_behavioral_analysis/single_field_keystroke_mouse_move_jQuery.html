@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<body>
+    <form id="frm" action="#" method="post" onsubmit="return false">
+        <input type="password" name="pwd" id="pwd"/>
+        <input type="submit" id="sub" value="Login"/>
+    </form>
+    <div id="echo"></div>
+
+<script>
+var tmr = [];
+
+$('#pwd').keydown(function(evt) {
+    console.log("Key Down on: "+evt.key+" On time: "+evt.timeStamp);
+});
+
+$('#pwd').keyup(function(evt) {
+    tmr.push({"key":evt.key});
+    console.log("Key Up on: "+evt.key+" On time: "+evt.timeStamp);
+});
+$('#sub').click(function showDynamic(){ 
+    // it seems that when press Enter key, this will be triggered but "Enter" won't be recorded in tmr list,
+    // it will be recorded in console as a pressed key though
+    var ret = "";
+    for(var i = 0; i < tmr.length; i++) {
+        ret += tmr[i].key;
+    }
+    $('#echo').html("You have typed: "+ret);
+});
+</script>
+
+</body>
+</html>
