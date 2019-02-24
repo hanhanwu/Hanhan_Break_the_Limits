@@ -16,12 +16,18 @@ Here to try difference languages to collect keystroke and mouse movement data, t
 Although I'm very bad at JS, jQuery is really great to record all these movements with high precision.
 * [My code - Single field keystroke & mouse movement][4]
   * The data details are recorded in console, save console results into .txt file should be fine
-  * Besides output the data in the console, in the code, it also pushes each keystroke (key up & key down) into a list. There are a few interesting findings:
+  * Besides output the data in the console, in the code, it also pushes each keystroke (key up & key down) into a list `tmr`. There are a few interesting findings:
     * If you press "Enter" to trigger the button, its keyup won't be recorded in the `tmr` list, but will appear in console. So better to use console to record the data you want to collect.
     * If you typed any special character, such as `&` = Shift + 7, if you simply record the event key, it will record "Shift" and "&", while the code for "&" and "7" are the same. So, it's better to record the event code or both, otherwise same key maybe recorded as different when you used Shift
+  * For mouse movement
+    * Find all the mouse events that jQuery supports [here][5]
+    * When pressed "Enter" to trigger the submit button, absolute (x,y) will be (0,0), relative (x,y) won't. Better to use absolute (x,y) to record mouse movement. When you really use mouse to click the submit button, the absolute (x,y) won't be (0,0)
+    * Also, if you typed "Enter" to trigger submit button, there won't be mouseenter, mousedown, mouseup or mouseleave recorded. Only when you are really using the mouse, these will be recorded.
+    
   
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/keystroke_mouse_behavioral_analysis/collect_mouse_movement_python.py
 [2]:https://github.com/asweigart/pyautogui
 [3]:https://pynput.readthedocs.io/en/latest/mouse.html#monitoring-the-mouse
 [4]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/keystroke_mouse_behavioral_analysis/single_field_keystroke_mouse_move_jQuery.html
+[5]:https://api.jquery.com/category/events/mouse-events/
