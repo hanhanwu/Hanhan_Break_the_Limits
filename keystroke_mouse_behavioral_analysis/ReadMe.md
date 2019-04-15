@@ -15,7 +15,7 @@ Here to try difference languages to collect keystroke and mouse movement data, t
 ### jQuery Version
 Although I'm very bad at JS, jQuery is really great to record all these movements with high precision.
 * [My code - Single field keystroke & mouse movement][4]
-  * It records mouse movement, mouse enter, mouse down, mouse up, key down and key up.
+  * It records mouse movement, mouse enter, mouse leave, mouse down, mouse up, key down and key up.
   * The data details are recorded in console, save console results into .txt file should be fine
   * Besides output the data in the console, in the code, it also pushes each keystroke (key up & key down) into a list `tmr`. There are a few interesting findings:
     * If you press "Enter" to trigger the button, its keyup won't be recorded in the `tmr` list, but will appear in console. So better to use console to record the data you want to collect.
