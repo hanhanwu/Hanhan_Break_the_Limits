@@ -12,6 +12,10 @@
 <script>
 var tmr = [];
 
+$('*').mousemove(function(evt) {
+  console.log("Mouse Move at: " + evt.pageX + ", " + evt.pageY + " On time: "+evt.timeStamp);
+});
+
 $('#pwd').keydown(function(evt) {
     tmr.push({"key":evt.key, "code":evt.which});
     console.log("Key Down on: "+evt.key+" On time: "+evt.timeStamp);
