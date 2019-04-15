@@ -9,6 +9,14 @@ Here to try difference languages to collect keystroke and mouse movement data, t
   * It seems that the x, y collected here are all int, may lose accuracy
   * Most of the features in PyAutoGUI is to control the mouse (such as mouse up, mouse down, drag, etc.), keyboard, this can help write user behavoior simulation
   * But so far, it doesn't support more movement recording, such as mouse click
+  * [My code - Mouse Movement Simulation][6]
+    * <b>If something went wrong with your mouse during the experiments, press "ESC".</b>
+    * [Mouse Functions Cheatsheet From pyautogui][7]
+    * `moveTo` vs `dragTo`
+      * When there is draggable web elements, `dragTo` can really drag things to move
+    * mouse click vs `mouseDown`, `mouseUp`
+      * If you want to simulate the time interval between mouse down and mouse up, the later will give you more flexibility
+    * Scroll didn't show me any effect...
 * [Pynput for mouse monitoring][3]
   * Not sure why, I used IPython and python terminal, none of them could give me any output...
   
@@ -34,3 +42,5 @@ Although I'm very bad at JS, jQuery is really great to record all these movement
 [3]:https://pynput.readthedocs.io/en/latest/mouse.html#monitoring-the-mouse
 [4]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/keystroke_mouse_behavioral_analysis/single_field_keystroke_mouse_move_jQuery.html
 [5]:https://api.jquery.com/category/events/mouse-events/
+[6]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/keystroke_mouse_behavioral_analysis/mouse_movement_simulation.py
+[7]:https://pyautogui.readthedocs.io/en/latest/cheatsheet.html#mouse-functions
