@@ -16,7 +16,13 @@ Here to try difference languages to collect keystroke and mouse movement data, t
       * When there is draggable web elements, `dragTo` can really drag things to move
     * mouse click vs `mouseDown`, `mouseUp`
       * If you want to simulate the time interval between mouse down and mouse up, the later will give you more flexibility
-    * Scroll didn't show me any effect...
+    * Scroll didn't show me any effect on Mac, running in IPython...
+  * [My code - Keyboard Typing Simulation][8]
+    * Only `typewrite()` works on IPython, functions like `keyDown()`, `keyUp()` you need to use terminal to see the output
+    * Keys such as "shift" won't work on Mac, but works on Windows...
+      * To install pyautogui on Windows, you just need to type `pip install pyautogui` if you have installed Anaconda Python3 and added pip into your path
+    * [pyautogui keys - only works on windows][9]
+    * [keyboard functions][10]
 * [Pynput for mouse monitoring][3]
   * Not sure why, I used IPython and python terminal, none of them could give me any output...
   
@@ -44,3 +50,6 @@ Although I'm very bad at JS, jQuery is really great to record all these movement
 [5]:https://api.jquery.com/category/events/mouse-events/
 [6]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/keystroke_mouse_behavioral_analysis/mouse_movement_simulation.py
 [7]:https://pyautogui.readthedocs.io/en/latest/cheatsheet.html#mouse-functions
+[8]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/keystroke_mouse_behavioral_analysis/keyboard_typing_simulation.py
+[9]:https://pyautogui.readthedocs.io/en/latest/keyboard.html#keyboard-keys
+[10]:https://pyautogui.readthedocs.io/en/latest/keyboard.html#the-press-keydown-and-keyup-functions
