@@ -12,8 +12,16 @@
   * Scrandom (Random scrolling) - fast scrolling down to the bottom
   * Wild Mouse - subconsciously zig-zag the mouse around the screen as they wait
   * Backtracking - click "back"; go back the previous web elements
+  
+  
+  
+## Journal Resources
+* [Internet Banking and Commerce][3]
+* [Taylor & Francis Online - Keywords search Journals][4]
 
 
 [1]:https://www.trymyui.com/blog/2016/10/28/mouse-movement-patterns-and-user-frustration/
 [2]:https://www.trymyui.com/blog/2016/09/15/4-user-frustration-behavior-patterns/
+[3]:http://www.icommercecentral.com/
+[4]:https://www.tandfonline.com/action/doSearch?AllField=mouse+movement+
 
