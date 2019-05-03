@@ -1,5 +1,7 @@
 # Attack Signals Recommendation System
 
+### This project has copy right ‼️
+
 
 ## Potential Data Source
 * [KDD 99 attacks - features & tasks description][1]
