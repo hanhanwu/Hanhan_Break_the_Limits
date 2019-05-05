@@ -22,6 +22,7 @@
 * [Sherlock - Smartphone Sensor Malware Data][4]
   * [Data Description][5]
   * [To get full access - Sign the agreement for 3 years license][6]
+  * Different types of malware data is stored in different files, each malware type has different features. If use one-hot to put all the columns together, there will be many columns, and many empty values
   
   
 ## Potential Delight User Points
