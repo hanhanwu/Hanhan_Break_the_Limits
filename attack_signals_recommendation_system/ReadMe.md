@@ -4,9 +4,10 @@
 
 
 ## Potential Data Source
-* [KDD 99 attacks - features & tasks description][1]
+* [KDD 99 attacks - some features & tasks description][1]
   * [My code R - Quickly check full dataset][2]
     * [To download the data][3]
+  * [The complete list of features][7]
   * Attack Types in KDD99
     * normal: non-attack
       * normal
@@ -37,3 +38,4 @@
 [4]:http://bigdata.ise.bgu.ac.il/sherlock/index.html#/
 [5]:http://bigdata.ise.bgu.ac.il/sherlock/index.html#/dataset
 [6]:http://bigdata.ise.bgu.ac.il/sherlock/index.html#/download
+[7]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/screenshots/41_features.PNG
