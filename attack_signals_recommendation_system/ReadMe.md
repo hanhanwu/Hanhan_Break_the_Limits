@@ -2,6 +2,15 @@
 
 ### This project has copy right ‼️
 
+## Data Preparation
+### [Data Preprocessing][8]
+* As you can see in the comments, many outliers are for the majority of a certain attack types, therefore, I dind't clean the outliers, didn't normalize the data either.
+* Meanwhile, <b>the main purpose</b> here is NOT to use machine learning to improve prediction accuracy, but to generate simulated cyber signals generated in real world, imagine those cyber analysists manually look into the data and create rules (signals). The data here will be used in tree model in order to create rules. So just need to find some patterns will be enough.
+* <b>Learning Note</b>
+  * This is a multi-class prediction problem. When you want to show confusion matrix, you need both categorical and numerical labels. To convert categorical labels to numerical ones, "factoring" is better than "label encoding", since factoring will obey the original label order, encoding won't.
+  * Models like random forest in Python accepts "object" data type, but the value should be numbers. So the problem that python random forest do not like R which has "factor" data type should not exist any more.
+### [Generate Rules][9]
+
 
 ## Potential Data Source
 * [KDD 99 attacks - some features & tasks description][1]
@@ -49,3 +58,5 @@
 [5]:http://bigdata.ise.bgu.ac.il/sherlock/index.html#/dataset
 [6]:http://bigdata.ise.bgu.ac.il/sherlock/index.html#/download
 [7]:https://datahub.io/machine-learning/kddcup99#resource-kddcup99_zip
+[8]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/data_preprocessing.ipynb
+[9]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/generate_rules.ipynb
