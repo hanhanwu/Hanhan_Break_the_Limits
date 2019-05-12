@@ -9,6 +9,7 @@
 * <b>Learning Note</b>
   * This is a multi-class prediction problem. When you want to show confusion matrix, you need both categorical and numerical labels. To convert categorical labels to numerical ones, "factoring" is better than "label encoding", since factoring will obey the original label order, encoding won't.
   * Models like random forest in Python accepts "object" data type, but the value should be numbers. So the problem that python random forest do not like R which has "factor" data type should not exist any more.
+    * However, the factorized label has to be "int64" type
 ### [Generate Rules][9]
 
 
