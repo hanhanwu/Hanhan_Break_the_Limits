@@ -13,6 +13,7 @@
 ### [Generate Rules][9]
 * <b>Learning Notes</b>
   * Even though sklearn random forest supports object features, lime doesn't. All the features in lime has to be int or float, but you can indicate which features should be categorical
+  * Xgboost also requires all the features to be int or float, but <b>also can be bool</b>. You can not indicate which features should be categorical type, but need label encoding.
 
 
 ## Potential Data Source
