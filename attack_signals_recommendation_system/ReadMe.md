@@ -11,6 +11,8 @@
   * Models like random forest in Python accepts "object" data type, but the value should be numbers. So the problem that python random forest do not like R which has "factor" data type should not exist any more.
     * However, the factorized label has to be "int64" type
 ### [Generate Rules][9]
+* <b>Learning Notes</b>
+  * Even though sklearn random forest supports object features, lime doesn't. All the features in lime has to be int or float, but you can indicate which features should be categorical
 
 
 ## Potential Data Source
