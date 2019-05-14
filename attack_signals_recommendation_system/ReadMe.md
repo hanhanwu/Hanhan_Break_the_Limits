@@ -58,6 +58,10 @@
 * New types of attacks that never appeared in any existing "user" records, is that possible to detect?
 
 
+## POtential Future TO-DOs
+* About using association rules to generate rules? Spark has FP-growth, or the Java package.
+
+
 [1]:http://kdd.ics.uci.edu/databases/kddcup99/task.html
 [2]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/Data_Sources/kdd99_data_check.R
 [3]:http://kdd.ics.uci.edu/databases/kddcup99/kddcup99.html
