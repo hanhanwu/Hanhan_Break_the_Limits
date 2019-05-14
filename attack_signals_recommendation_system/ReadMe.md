@@ -14,6 +14,9 @@
 * <b>Learning Notes</b>
   * Even though sklearn random forest supports object features, lime doesn't. All the features in lime has to be int or float, but you can indicate which features should be categorical
   * Xgboost also requires all the features to be int or float, but <b>also can be bool</b>. You can not indicate which features should be categorical type, but need label encoding.
+  * When it comes to multi-classification problem, random forest has params easier to be tuned, faster and tend to get better results than xgboost.
+  * Originally I was planning to use xgboost to generate model artifact so that I can extract rules from those trees directly, but xgboost prediction result was too bad (all predicted as normal), you need to set weights in objective function for xgboost, may resolve some problem, but this is more troublesome than random forest.
+  * With each estimator of random forest, you are able to visualize the trees and find rules. All the estimators are saved as .dot files. [To find all the images and dot file][10]
 
 
 ## Potential Data Source
@@ -64,3 +67,4 @@
 [7]:https://datahub.io/machine-learning/kddcup99#resource-kddcup99_zip
 [8]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/data_preprocessing.ipynb
 [9]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/generate_rules.ipynb
+[10]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/tree/master/attack_signals_recommendation_system/images
