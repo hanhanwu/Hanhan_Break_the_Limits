@@ -17,7 +17,8 @@
   * When it comes to multi-classification problem, random forest has params easier to be tuned, faster and tend to get better results than xgboost.
   * Originally I was planning to use xgboost to generate model artifact so that I can extract rules from those trees directly, but xgboost prediction result was too bad (all predicted as normal), you need to set weights in objective function for xgboost, may resolve some problem, but this is more troublesome than random forest.
   * With each estimator of random forest, you are able to visualize the trees and find rules. All the estimators are saved as .dot files. [To find all the images and dot file][10]
-
+### [Extract Rules][11]
+* Each estimator here is too giant, with so much tree branches. What I am trying to do here is, to generate the "if...else..." code from an estimator, this makes generating the final rules much easier
 
 ## Potential Data Source
 * [KDD 99 attacks - some features & tasks description][1]
@@ -72,3 +73,4 @@
 [8]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/data_preprocessing.ipynb
 [9]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/generate_rules.ipynb
 [10]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/tree/master/attack_signals_recommendation_system/images
+[11]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/extract_rules.ipynb
