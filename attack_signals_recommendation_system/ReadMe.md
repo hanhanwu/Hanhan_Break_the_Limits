@@ -19,6 +19,9 @@
   * With each estimator of random forest, you are able to visualize the trees and find rules. All the estimators are saved as .dot files. [To find all the images and dot file][10]
 ### [Extract Rules][11]
 * Each estimator here is too giant, with so much tree branches. What I am trying to do here is, to generate the "if...else..." code from an estimator, this makes generating the final rules much easier
+### [Simulate Data][12]
+* Simulate Clients' Data
+  * Each client has a bunch of records, some are has the right attack type (triggered rule), some are wrong, all randomly asigned. This is trying to mimic the real work situation, when business analysts manually create rules, not all of them are right. Although the wrongly labeled percentage in this simulated is much smaller than real world data.
 
 ## Potential Data Source
 * [KDD 99 attacks - some features & tasks description][1]
@@ -74,3 +77,4 @@
 [9]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/generate_rules.ipynb
 [10]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/tree/master/attack_signals_recommendation_system/images
 [11]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/extract_rules.ipynb
+[12]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/simulate_data.ipynb
