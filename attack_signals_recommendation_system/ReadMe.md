@@ -22,6 +22,11 @@
 ### [Simulate Data][12]
 * Simulate Clients' Data
   * Each client has a bunch of records, some are has the right attack type (triggered rule), some are wrong, all randomly asigned. This is trying to mimic the real work situation, when business analysts manually create rules, not all of them are right. Although the wrongly labeled percentage in this simulated is much smaller than real world data.
+### [Recommend Signals to Clients][13]
+* Recommend signals to a target client based on clients' similarities, signal ratings in each client
+  * Default signal rating is normalized frequency here
+  * The rating here can also be a mix of default ratings and business analytics manually adjustment, this will allow business experts to interact with machine learning algorithms, which will improve recommendation results. <b>Flexibility of expert & machine learning interaction</b>
+  * From the returned results, you can also check recommendation score and decide how many (k) signals you want for the target client. Because the recommendation score could have a sharp drop.
 
 ## Potential Data Source
 * [KDD 99 attacks - some features & tasks description][1]
@@ -55,14 +60,14 @@
   * [To get full access - Sign the agreement for 3 years license][6]
   * Different types of malware data is stored in different files, each malware type has different features. If use one-hot to put all the columns together, there will be many columns, and many empty values
   
-  
+
 ## Potential Delight User Points
 * In industry, there can be so many signals, based on those signals always appear together in a client/user, the recommendation system can also generate higher level signal categories, similar to "crowd sourcing".
   * The benefit is, 
 * New types of attacks that never appeared in any existing "user" records, is that possible to detect?
 
 
-## POtential Future TO-DOs
+## Potential Future TO-DOs
 * About using association rules to generate rules? Spark has FP-growth, or the Java package.
 
 
@@ -78,3 +83,4 @@
 [10]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/tree/master/attack_signals_recommendation_system/images
 [11]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/extract_rules.ipynb
 [12]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/simulate_data.ipynb
+[13]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/recommend_signals2clients.ipynb
