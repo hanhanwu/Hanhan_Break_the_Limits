@@ -22,6 +22,10 @@
 ### [Simulate Data][12]
 * Simulate Clients' Data
   * Each client has a bunch of records, some are has the right attack type (triggered rule), some are wrong, all randomly asigned. This is trying to mimic the real work situation, when business analysts manually create rules, not all of them are right. Although the wrongly labeled percentage in this simulated is much smaller than real world data.
+* Simulation for Signal Grouping
+  * Each signal will have different params and settings, this part is to simulate this type of situation and trying to group similar signals based on their settings' similarities
+* Simulation for Association Rules
+  * To simulate the real situation when each record could get 1+ signals, with association rules, it's trying to find rules that tend to appear together, either to help group signals or to help predict attacks. 
 ### [Recommend Signals to Clients][13]
 * Recommend signals to a target client based on clients' similarities, signal ratings in each client
   * Default signal rating is normalized frequency here
