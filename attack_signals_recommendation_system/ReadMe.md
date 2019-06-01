@@ -66,13 +66,8 @@
   
 
 ## Potential Delight User Points
-* In industry, there can be so many signals, based on those signals always appear together in a client/user, the recommendation system can also generate higher level signal categories, similar to "crowd sourcing".
-  * The benefit is, 
-* New types of attacks that never appeared in any existing "user" records, is that possible to detect?
+* Remember to calculate of the lost of attacks, financial impact
 
-
-## Potential Future TO-DOs
-* About using association rules to generate rules? Spark has FP-growth, or the Java package.
 
 
 [1]:http://kdd.ics.uci.edu/databases/kddcup99/task.html
