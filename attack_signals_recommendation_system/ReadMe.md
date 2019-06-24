@@ -26,6 +26,14 @@
   * Each signal will have different params and settings, this part is to simulate this type of situation and trying to group similar signals based on their settings' similarities
 * Simulation for Association Rules
   * To simulate the real situation when each record could get 1+ signals, with association rules, it's trying to find rules that tend to appear together, either to help group signals or to help predict attacks. 
+  * To understand the metrics used in association rules:
+    * Support and Confidence are min values, means the rules have at least passed the min support and min confidence
+    * Lift is a measure of importance of a rule.
+      * `Lift = confidence / expected_confidence = confidence / support of rule head`
+      * A lift value greater than 1 indicates that the rule body and the rule head appear more often together than expected, this means that the occurrence of the rule body has a positive effect on the occurrence of the rule head.
+      * A lift smaller than 1 indicates that the rule body and the rule head appear less often together than expected, this means that the occurrence of the rule body has a negative effect on the occurrence of the rule head.
+      * A lift value near 1 indicates that the rule body and the rule head appear almost as often together as expected, this means that the occurrence of the rule body has almost no effect on the occurrence of the rule head.
+      * [Refernece][14]
 ### [Recommend Signals to Clients][13]
 * Recommend signals to a target client based on clients' similarities, signal ratings in each client
   * Default signal rating is normalized frequency here
@@ -83,3 +91,4 @@
 [11]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/extract_rules.ipynb
 [12]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/simulate_data.ipynb
 [13]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/attack_signals_recommendation_system/recommend_signals2clients.ipynb
+[14]:https://www.ibm.com/support/knowledgecenter/SSEPGG_10.1.0/com.ibm.im.model.doc/c_lift_in_an_association_rule.html
