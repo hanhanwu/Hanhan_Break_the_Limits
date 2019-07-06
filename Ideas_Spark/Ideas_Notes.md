@@ -1,6 +1,6 @@
 # Ideas Spark 🌟
 
-### This project has copy right❣️
+### These projects have copy right❣️
 
 
 ## Recommendation System in Cyber Security Prediction [🍀 Done]
