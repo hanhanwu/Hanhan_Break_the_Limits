@@ -9,11 +9,11 @@
   * Similarly, for a client, if it has triggered a certain attack rules/signals, based on the similarity of other clients, we can predict the rules/signals that can be triggered later
 * [My Project Link][2] 💖
 
-## Graph DB for Purchasing Anomaly Detection 🌱
+## Graph DB for Purchasing Anomaly Detection 🍀
 * Trying to see how to use graph DB to build purchasing behavior DB, and how efficient to find anomalies.
 * [My Project Link][3] 💖
 
-## Silicon Valley Vancouver?
+## Silicon Valley Vancouver? 🌱
 * It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing, data visualization.
   
 ## Bank Fantasy
