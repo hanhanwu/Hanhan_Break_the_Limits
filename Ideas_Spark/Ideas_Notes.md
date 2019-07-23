@@ -14,7 +14,8 @@
 * [My Project Link][3] 💖
 
 ## Silicon Valley Vancouver? 🌱
-* It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing, data visualization.
+* It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing.
+* [My Code][4]
   
 ## Bank Fantasy
 * I'm thinking to build my fantasy world, everything in this world has intelligence. One of the elements is a bank. 
@@ -30,3 +31,4 @@
 [1]:https://arxiv.org/pdf/1804.10276.pdf
 [2]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/tree/master/attack_signals_recommendation_system
 [3]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/tree/master/Graph_Database/purchase_anomaly
+[4]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Ideas_Spark/track_siliconvalley_vancouver_trend.ipynb
