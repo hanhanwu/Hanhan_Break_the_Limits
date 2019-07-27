@@ -22,6 +22,7 @@
 * This bank should have similar data structure as most banks do, and will do business in creative ways.
   * Reasearch on what kind of business banks do, that looks interesting and from there to think about more fun ideas.
   * To mimic how banks make money, how sales grow, can be interesting and challenging
+* Features that use rating system can try [Bayesian Adjusted Rating] - It considers multiple factors in the rating rank
   
 ## Charity Project - Traveling Security Alert
   * When people are traveling, send news about massive shooting, suicide bombing news around that location
@@ -32,3 +33,4 @@
 [2]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/tree/master/attack_signals_recommendation_system
 [3]:https://github.com/hanhanwu/Hanhan_Data_Science_Practice/tree/master/Graph_Database/purchase_anomaly
 [4]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Ideas_Spark/track_siliconvalley_vancouver_trend.ipynb
+[5]:https://www.analyticsvidhya.com/blog/2019/07/introduction-online-rating-systems-bayesian-adjusted-rating/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
