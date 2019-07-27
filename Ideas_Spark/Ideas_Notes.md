@@ -13,7 +13,7 @@
 * Trying to see how to use graph DB to build purchasing behavior DB, and how efficient to find anomalies.
 * [My Project Link][3] 💖
 
-## Silicon Valley Vancouver? 🌱
+## Silicon Valley Vancouver? 🍀
 * It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing.
 * [My Code][4]
   
