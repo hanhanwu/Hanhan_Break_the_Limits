@@ -22,7 +22,10 @@
 * This bank should have similar data structure as most banks do, and will do business in creative ways.
   * Reasearch on what kind of business banks do, that looks interesting and from there to think about more fun ideas.
   * To mimic how banks make money, how sales grow, can be interesting and challenging
-* Features that use rating system can try [Bayesian Adjusted Rating] - It considers multiple factors in the rating rank
+* Features that use rating system can try [Bayesian Adjusted Rating][5] - It considers multiple factors in the rating rank
+* Feature Ideas
+  * It bridges business clients and individual clients
+  * It brings opportunities to each business client from other business clients
   
 ## Charity Project - Traveling Security Alert
   * When people are traveling, send news about massive shooting, suicide bombing news around that location
