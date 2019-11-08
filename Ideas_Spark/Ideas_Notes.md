@@ -16,6 +16,16 @@
 ## Silicon Valley Vancouver? 🍀
 * It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing.
 * [My Code][4]
+
+## DS Collaboration Hunting Platform
+* This is a platform just for people who are working on DS. People who come up with solutions and people who are look for solutions can find the opportunities of collaboration.
+  * Check whether there is simiar platform first (not just DS)
+  * Check whether there is NLP existing solution to match similar topics together first
+  * DIY DS methods
+    * Tag & entity match in NLP
+    * Topic match in NLP
+    * Recommendation System based on tags, topics, also will consider user feedback
+      * Try [Bayesian Adjusted Rating][5]?
   
 ## Bank Fantasy
 * I'm thinking to build my fantasy world, everything in this world has intelligence. One of the elements is a bank. 
