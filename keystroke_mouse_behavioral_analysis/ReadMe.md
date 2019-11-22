@@ -19,9 +19,9 @@ Here to try difference languages to collect keystroke and mouse movement data, t
     * Scroll didn't show me any effect on Mac, running in IPython...
   * [My code - Keyboard Typing Simulation][8]
     * Only `typewrite()` works on IPython, functions like `keyDown()`, `keyUp()` you need to use terminal to see the output
-    * Keys such as "shift" won't work on Mac, but works on Windows...
+    * For hotkey, such as Shift + 8, if you use keyDown, keyUp, it only works on Windows, to make it works on mac, you need to use `pyautogui.hotkey("shift", "8")`
       * To install pyautogui on Windows, you just need to type `pip install pyautogui` if you have installed Anaconda Python3 and added pip into your path
-    * [pyautogui keys - only works on windows][9]
+    * [pyautogui keys - implemented on Windows, mac differently][9]
     * [keyboard functions][10]
 * [Pynput for mouse monitoring][3]
   * Not sure why, I used IPython and python terminal, none of them could give me any output...
