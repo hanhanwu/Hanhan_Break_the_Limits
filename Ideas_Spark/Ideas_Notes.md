@@ -16,7 +16,20 @@
 ## Silicon Valley Vancouver? 🍀
 * It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing.
 * [My Code][4]
-
+  
+## Bank Fantasy 🌱
+* I'm thinking to build my fantasy world, everything in this world has intelligence. One of the elements is a bank. 
+* This bank has simplified & better oragnized data schema as real banks, and it will use AI to do something creative
+* Features that use rating system can try [Bayesian Adjusted Rating][5] - It considers multiple factors in the rating rank
+* Feature Ideas
+  * Bridge business clients & individual clients
+    * Database for business clients, individual clients, transactions, etc.
+    * Based on individual client's transactions, it will recommend business clients
+      * Default recommendation based on transaction info
+      * Nearby recommendations
+      * Interactive ranking for recommendation
+    * Based on individual clients' choices, trends, products relevance to provide business insights to business clients, in order to help them explore potential business opportunities.
+  
 ## DS Collaboration Hunting Platform
 * This is a platform just for people who are working on DS. People who come up with solutions and people who are look for solutions can find the opportunities of collaboration.
   * Check whether there is simiar platform first (not just DS)
@@ -26,17 +39,7 @@
     * Topic match in NLP
     * Recommendation System based on tags, topics, also will consider user feedback
       * Try [Bayesian Adjusted Rating][5]?
-  
-## Bank Fantasy
-* I'm thinking to build my fantasy world, everything in this world has intelligence. One of the elements is a bank. 
-* This bank should have similar data structure as most banks do, and will do business in creative ways.
-  * Reasearch on what kind of business banks do, that looks interesting and from there to think about more fun ideas.
-  * To mimic how banks make money, how sales grow, can be interesting and challenging
-* Features that use rating system can try [Bayesian Adjusted Rating][5] - It considers multiple factors in the rating rank
-* Feature Ideas
-  * It bridges business clients and individual clients
-  * It brings opportunities to each business client from other business clients
-  
+
 ## Charity Project - Traveling Security Alert
   * When people are traveling, send news about massive shooting, suicide bombing news around that location
   * Predict/Forecast potential masive shooting, suicide bombing in a location that the user search (like weather forecasting)
