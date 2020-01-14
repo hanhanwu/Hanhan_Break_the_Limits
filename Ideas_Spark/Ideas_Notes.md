@@ -29,6 +29,9 @@
       * Nearby recommendations
       * Interactive ranking for recommendation
     * Based on individual clients' choices, trends, products relevance to provide business insights to business clients, in order to help them explore potential business opportunities.
+    
+## One Government System
+* Design and implement a system that CRA, Canada.ca, health care in each province, banks can talk to each other, so that when a person's immigration status changed, all the organizations will update the status.
   
 ## DS Collaboration Hunting Platform
 * This is a platform just for people who are working on DS. People who come up with solutions and people who are look for solutions can find the opportunities of collaboration.
