@@ -26,7 +26,7 @@
     * Database for business clients, individual clients, transactions, etc.
     * Based on individual client's transactions, it will recommend business clients
       * Default recommendation based on transaction info
-      * Nearby recommendations
+      * Nearby recommendations with Bayesian Adjusted Rating
       * Interactive ranking for recommendation
     * Based on individual clients' choices, trends, products relevance to provide business insights to business clients, in order to help them explore potential business opportunities.
     
