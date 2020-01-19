@@ -15,7 +15,7 @@
 
 ## Silicon Valley Vancouver? 🍀
 * It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing.
-* [My Code][4]
+* [My Code][4] 💖
   
 ## Bank Fantasy 🌱
 * I'm thinking to build my fantasy world, everything in this world has intelligence. One of the elements is a bank. 
