@@ -28,6 +28,8 @@
       * Default recommendation based on transaction info
       * Nearby recommendations with Bayesian Adjusted Rating
     * Based on individual clients' choices, trends, products relevance to provide business insights to business clients, in order to help them explore potential business opportunities.
+  * Visualization
+    * For trendings, try bumpchart: https://github.com/davidsjoberg/ggbump
     
 ## One Government System
 * Design and implement a system that CRA, Canada.ca, ICBC, health care in each province, banks, etc. can talk to each other, so that when a person's immigration status changed, all the organizations will update the status.
