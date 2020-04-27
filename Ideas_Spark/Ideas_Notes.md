@@ -30,10 +30,10 @@
     * Based on individual clients' choices, trends, products relevance to provide business insights to business clients, in order to help them explore potential business opportunities.
   * Visualization
     * For trendings, try bumpchart: https://github.com/davidsjoberg/ggbump
-    
-## One Government System
-* Design and implement a system that CRA, Canada.ca, ICBC, health care in each province, banks, etc. can talk to each other, so that when a person's immigration status changed, all the organizations will update the status.
-* And when there is a new organization got added, the default cross organization communication will be added automatically.
+  
+## Charity Project - Traveling Security Alert
+  * When people are traveling, send news about massive shooting, suicide bombing news around that location
+  * Predict/Forecast potential masive shooting, suicide bombing in a location that the user search (like weather forecasting)
   
 ## DS Collaboration Hunting Platform
 * This is a platform just for people who are working on DS. People who come up with solutions and people who are look for solutions can find the opportunities of collaboration.
@@ -44,10 +44,6 @@
     * Topic match in NLP
     * Recommendation System based on tags, topics, also will consider user feedback
       * Try [Bayesian Adjusted Rating][5]?
-
-## Charity Project - Traveling Security Alert
-  * When people are traveling, send news about massive shooting, suicide bombing news around that location
-  * Predict/Forecast potential masive shooting, suicide bombing in a location that the user search (like weather forecasting)
 
 
 [1]:https://arxiv.org/pdf/1804.10276.pdf
