@@ -18,18 +18,10 @@
 * [My Code][4] 💖
   
 ## Bank Fantasy 🌱
-* I'm thinking to build my fantasy world, everything in this world has intelligence. One of the elements is a bank. 
-* This bank has simplified & better oragnized data schema as real banks, and it will use AI to do something creative
-* Features that use rating system can try [Bayesian Adjusted Rating][5] - It considers multiple factors in the rating rank
-* Feature Ideas
-  * Bridge business clients & individual clients
-    * Database for business clients, individual clients, transactions, etc.
-    * Based on individual client's transactions, it will recommend business clients
-      * Default recommendation based on transaction info
-      * Nearby recommendations with Bayesian Adjusted Rating
-    * Based on individual clients' choices, trends, products relevance to provide business insights to business clients, in order to help them explore potential business opportunities.
-  * Visualization
-    * For trendings, try bumpchart: https://github.com/davidsjoberg/ggbump
+<p align="center">
+<img src="https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/imgs/golden_triangle.png" width="600" height="300" />
+</p>
+
   
 ## Charity Project - Traveling Security Alert
   * When people are traveling, send news about massive shooting, suicide bombing news around that location
