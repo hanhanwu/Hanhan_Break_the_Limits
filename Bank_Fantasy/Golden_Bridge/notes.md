@@ -5,3 +5,4 @@
 ## Potential tools
 * Visualization
   * For trendings, try bumpchart: https://github.com/davidsjoberg/ggbump
+  * Interactive charts: https://github.com/antvis/G2
