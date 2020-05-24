@@ -28,7 +28,7 @@
   * For sample 1, multiplicative residuals looks more random (better), for sample 2, not sure.
   * Residuals might not be stationary even though the trend and the season had been decomposed. Meanwhile, while the original time series doesn't have any null value, residuals will bring in null values. Residuals also have quite differnt value scale as the original time series, so currently, I'm not sure using residuals or (preprocessed) original time series is better for later forecasting.
   * Next, I'm going to do stationary analysis on different residuals, and also compare with the original data.
-* [My Code - Stationary Analysis][5]
+* [My Code - Stationary Analysis][5]💖
   * Through the stationary analysis on 2 representative samples, using original time series, processed time series, residuals and processed residuals. An easier solution is to use logged moving average of original time series, which is showing 90+% confidence of strict stationary in both samples.
   * So next, I'm going to calculate forecastability of the same sets of time series, just to compare. Even though it's highly likely that I will use logged moving average for forecasting.
 
