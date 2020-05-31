@@ -34,8 +34,9 @@
 * [My Code - Forecastable Analysis][6]💖
   * Same as Stationary Analysis, among all the used time series sequences, logged moving average from the original data still appear to be better than other choices, when it comes to forecastable analysis. Same for both sample data.
   * Next I'm going to use logged moving average to experiment on different forecasting methods to compare.
-* [My Code - Forecast Experiments - Using all Training data][7]
-  * The purpose in these experiments it to find whether there is an algorithm works better for all the data here.
+* [My Code - Forecast Experiments - Fixed Window Solution][7]💖
+  * The purpose in these experiments is to find whether there is an algorithm works better for all the samples here.
+  * The training data is using all the historical data, instead of the latest historical data, this is why it's called "fixed window solution".
   * I was using the 2 representative samples, using their logged and logged moving average formats.
     * Because logged data still keeps more original data's pattern, and in the same scale as logged moving average, easier to compare RMSE.
     * Logged moving average format here is proved to be more forecastable and strict stationary through above analysis.
