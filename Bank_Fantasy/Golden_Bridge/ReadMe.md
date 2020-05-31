@@ -34,6 +34,13 @@
 * [My Code - Forecastable Analysis][6]💖
   * Same as Stationary Analysis, among all the used time series sequences, logged moving average from the original data still appear to be better than other choices, when it comes to forecastable analysis. Same for both sample data.
   * Next I'm going to use logged moving average to experiment on different forecasting methods to compare.
+* [My Code - Forecast Experiments - Using all Training data][7]
+  * The purpose in these experiments it to find whether there is an algorithm works better for all the data here.
+  * I was using the 2 representative samples, using their logged and logged moving average formats.
+    * Because logged data still keeps more original data's pattern, and in the same scale as logged moving average, easier to compare RMSE.
+    * Logged moving average format here is proved to be more forecastable and strict stationary through above analysis.
+  * The results is showing `SARIMA` works better, and using logged moving averge is better.
+  * Next, I want to see whether using the latest 2,3 weeks data for forecasting could work well. If so, then we'd better apply moving window as forecasting solution. Since using all the data for training may not be more reliable than using the latest data.
 
 ## Future Workd
 * Choose different forecasting method automatically for each merchant?
@@ -46,3 +53,4 @@
 [4]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/seasonal_decomposing.ipynb
 [5]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/stationary_analysis.ipynb
 [6]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecastable_analysis.ipynb
+[7]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_experiemnts.ipynb
