@@ -37,6 +37,7 @@
 
 ## Future Workd
 * Choose different forecasting method automatically for each merchant?
+* How to adjust forecasting model or model params when the latest time series ahs changed?
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
