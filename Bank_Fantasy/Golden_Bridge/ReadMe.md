@@ -42,10 +42,17 @@
     * Logged moving average format here is proved to be more forecastable and strict stationary through above analysis.
   * The results is showing `SARIMA` works better, and using logged moving averge is better.
   * Next, I want to see whether using the latest 2,3 weeks data for forecasting could work well. If so, then we'd better apply moving window as forecasting solution. Since using all the data for training may not be more reliable than using the latest data.
+* [My Code - Forecast Experiments - Moving Window Solution][8]💖
+  * Overall, moving window solution works well, even better than fixed window solution in most cases.
+    * With fixed window, SARIMA appears to be better, with moving window solution, Holt Winters appears to be enough
+  * 2 weeks training window is a bit better than 3 weeks.
+  * Logged moving average is a bit better than logged time series.
+  * So after these forecasting experiments, I will use holt winters with moving window solution for forecasting.
 
 ## Future Workd
 * Choose different forecasting method automatically for each merchant?
-* How to adjust forecasting model or model params when the latest time series ahs changed?
+* How to adjust model params in moving window solution?
+  * Federated learning like solution?
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
@@ -55,3 +62,4 @@
 [5]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/stationary_analysis.ipynb
 [6]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecastable_analysis.ipynb
 [7]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_experiemnts.ipynb
+[8]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_moving_window.ipynb
