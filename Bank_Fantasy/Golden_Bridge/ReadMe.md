@@ -48,10 +48,16 @@
   * 2 weeks training window is a bit better than 3 weeks.
   * Logged moving average is a bit better than logged time series.
   * So after these forecasting experiments, I will use holt winters with moving window solution for forecasting.
-* [My Code - Adjustable Forecasting][9]💖
+* [My Code - Adjustable Forecasting - Moving Window Solution][9]💖
   * Params will be optimized after a new testing data had been put into the new training data. 
   * It works well for Sample 2 (the less forecastable data). For Sample 1, it can bring down the historical average RMSE.
   * Although here I'm using grid search, it was fast to run through all the moving windows. Which means, on production, we can use this method for just 1 moving window.
+* [My Code - Prophet Forecasting - Fixed Window Solution][10]💖
+  * Fixed window solution that I'm using all the historical data for training.
+  * Prophet seems promising, it can handle NA automatically and smoothly. Its performace is also better than some moving window solutions for both samples.
+  * Logged moving average time series still appears better than logged time series in general.
+  * It seems that Prophet is building a function for the whole time series. So next I will try it with moving window solution to see how it goes.
+
 
 ## Future Workd
 * Choose different forecasting method automatically for each merchant?
@@ -69,3 +75,4 @@
 [7]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_experiemnts.ipynb
 [8]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_moving_window.ipynb
 [9]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/adjustable_forecasting.ipynb
+[10]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prophet_forecast.ipynb
