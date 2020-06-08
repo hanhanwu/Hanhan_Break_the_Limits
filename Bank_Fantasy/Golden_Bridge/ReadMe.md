@@ -34,6 +34,8 @@
 * [My Code - Forecastable Analysis][6]💖
   * Same as Stationary Analysis, among all the used time series sequences, logged moving average from the original data still appear to be better than other choices, when it comes to forecastable analysis. Same for both sample data.
   * Next I'm going to use logged moving average to experiment on different forecasting methods to compare.
+  
+#### Forecasting Experiments
 * [My Code - Forecast Experiments - Fixed Window Solution][7]💖
   * The purpose in these experiments is to find whether there is an algorithm works better for all the samples here.
   * The training data is using all the historical data, instead of the latest historical data, this is why it's called "fixed window solution".
@@ -47,7 +49,6 @@
     * With fixed window, SARIMA appears to be better, with moving window solution, Holt Winters appears to be enough
   * 2 weeks training window is a bit better than 3 weeks.
   * Logged moving average is a bit better than logged time series.
-  * So after these forecasting experiments, I will use holt winters with moving window solution for forecasting.
 * [My Code - Adjustable Forecasting - Moving Window Solution][9]💖
   * Params will be optimized after a new testing data had been put into the new training data. 
   * It works well for Sample 2 (the less forecastable data). For Sample 1, it can bring down the historical average RMSE.
@@ -57,13 +58,20 @@
   * Prophet seems promising, it can handle NA automatically and smoothly. Its performace is also better than some moving window solutions for both samples.
   * Logged moving average time series still appears better than logged time series in general.
   * It seems that Prophet is building a function for the whole time series. So next I will try it with moving window solution to see how it goes.
+* [My Code - Prophet Forecasting - Moving Window Solution][11]💖
+  * Moving window solution. Same as previous experiments, divide the whole time series into several moving windows of train & test data, the latest test data will be added into the next traim data for next round of forecasting. The last RMSE is forecasting RMSE, while historical average RMSE is the average value from the list of historical moving windows.
+  * Obviously, when using moving window & Prophet, the overall results are better than fixed window and other moving window solutions, for both samples, for both historical average RMSE and forecasting RMSE. Here, I even haven't used param tuning yet.
+  * Comparing with moving window solution in Holt Winters, this method could take a bit longer time. However, in real life application, we don't calculate all the previous moving windows, they are majorly used for param tuning. So should be fine.
+  
+#### Forecasting Experiemnts Summary
+* After all these rounds of expderiments, <b>Prophet with Moving Window solution, using logged moving average time series</b> of this dataset is better than other solutions. Being better in almost all the aspects, for both representative samples, for both forecasting rmse and historical average rmse.
 
 
 ## Future Workd
 * Choose different forecasting method automatically for each merchant?
 * How to adjust model params in moving window solution?
   * I tried grid search above. But we can further improve efficiency by narrow down the search space along the way. Such as using the frequency of best params.
-  * Federated learning like solution?
+* Federated Learning for general forecasting model
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
@@ -76,3 +84,4 @@
 [8]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_moving_window.ipynb
 [9]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/adjustable_forecasting.ipynb
 [10]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prophet_forecast.ipynb
+[11]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prophet_forecast_moving_window.ipynb
