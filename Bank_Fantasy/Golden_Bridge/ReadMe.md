@@ -67,7 +67,7 @@
 * After all these rounds of expderiments, <b>Prophet with Moving Window solution, using logged moving average time series</b> of this dataset is better than other solutions. Being better in almost all the aspects, for both representative samples, for both forecasting rmse and historical average rmse.
 
 
-## Future Workd
+## Future Work
 * Choose different forecasting method automatically for each merchant?
 * How to adjust model params in moving window solution?
   * I tried grid search above. But we can further improve efficiency by narrow down the search space along the way. Such as using the frequency of best params.
