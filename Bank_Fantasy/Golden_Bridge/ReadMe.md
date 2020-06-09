@@ -72,6 +72,7 @@
 * How to adjust model params in moving window solution?
   * I tried grid search above. But we can further improve efficiency by narrow down the search space along the way. Such as using the frequency of best params.
 * Federated Learning for general forecasting model
+  * Each client has its local model, and there is a general model for all of them with only params exchanged for optimized results.
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
