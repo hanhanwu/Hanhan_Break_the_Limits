@@ -72,6 +72,8 @@
   * Still use Prophet & Moving Window & logged moving average time series
     * Since Prophet can handle missing values automatically, daily forecasted values can be shown to the user.
     * Then just get the exponential value from forecasted results will be what to show to the clients, the daily values.
+* How does Prophet handle missing values
+  * From [Prophet paper][13], it's not clearly mention how to handle missing data. But I think it's also because they build a function to fit the whole time series of both train and test data, therefore missing data is also covered.
 
 
 ## Future Work
@@ -94,3 +96,4 @@
 [10]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prophet_forecast.ipynb
 [11]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prophet_forecast_moving_window.ipynb
 [12]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_counts.ipynb
+[13]:https://peerj.com/preprints/3190.pdf
