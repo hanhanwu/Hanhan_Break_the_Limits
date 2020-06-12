@@ -83,6 +83,8 @@
 * Federated Learning for general forecasting model
   * Each client has its local model, and there is a general model for all of them with only params exchanged for optimized results.
 * Explore any advanced research algorithms in time series forecasting that can forecast with added products
+  * One of the idea is time series regressor: https://otexts.com/fpp2/regression.html
+    * If we want to forecast total sales, then the predictors used in the regressor can be selected product's sales/purchase amount/etc.?
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
