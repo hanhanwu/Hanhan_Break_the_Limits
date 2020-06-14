@@ -35,7 +35,7 @@
   * Same as Stationary Analysis, among all the used time series sequences, logged moving average from the original data still appear to be better than other choices, when it comes to forecastable analysis. Same for both sample data.
   * Next I'm going to use logged moving average to experiment on different forecasting methods to compare.
   
-#### Forecasting Experiments
+### Forecasting Experiments
 * [My Code - Forecast Experiments - Fixed Window Solution][7]💖
   * The purpose in these experiments is to find whether there is an algorithm works better for all the samples here.
   * The training data is using all the historical data, instead of the latest historical data, this is why it's called "fixed window solution".
@@ -75,6 +75,13 @@
 * How does Prophet handle missing values
   * From [Prophet paper][13], it's not clearly mention how to handle missing data. But I think it's also because they build a function to fit the whole time series of both train and test data, therefore missing data is also covered.
 
+### Products Recommendation Experiments
+There are multiple recommendation methods in my mind now, so want to try them all to see which one works better.
+
+#### Data Exploration
+* [My Code - Merchant Products Observation][14]💖
+  * Here is to merge all the products data into 1 dataframe and to observe the purchase frequency pattern, in order to see whether the data could support different types of recommendation methods.
+
 
 ## Future Work
 * Choose different forecasting method automatically for each merchant?
@@ -100,3 +107,4 @@
 [11]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prophet_forecast_moving_window.ipynb
 [12]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_counts.ipynb
 [13]:https://peerj.com/preprints/3190.pdf
+[14]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/explore_merchant_products.ipynb
