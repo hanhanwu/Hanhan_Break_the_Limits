@@ -80,7 +80,8 @@ There are multiple recommendation methods in my mind now, so want to try them al
 
 #### Data Exploration
 * [My Code - Merchant Products Observation][14]💖
-  * Here is to merge all the products data into 1 dataframe and to observe the purchase frequency pattern, in order to see whether the data could support different types of recommendation methods.
+  * The data should allow to try different types of recommendation.
+  * I cannot use purchase frequency to caluclate product popularity since the daily, weekly frequencies are the same for all the products. Decide to use total purchase amount for product popularity.
 
 
 ## Future Work
