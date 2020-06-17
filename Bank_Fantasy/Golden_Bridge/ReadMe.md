@@ -6,6 +6,8 @@
 
 ## Prototype
 * [Click Me ❣][1]
+* Benefits
+  * It also encourages online contactless payment
 
 ## Implementation
 ### Data Preprocessing
