@@ -95,6 +95,8 @@ There are multiple recommendation methods in my mind now, so want to try them al
 * Explore any advanced research algorithms in time series forecasting that can forecast with added products
   * One of the idea is time series regressor: https://otexts.com/fpp2/regression.html
     * If we want to forecast total sales, then the predictors used in the regressor can be selected product's sales/purchase amount/etc.?
+* Using graph DB for real time recommendation.
+  * After a user just bought certain items, based on geo and purchased products, recommend other items and the nearby store.
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
