@@ -84,6 +84,12 @@ There are multiple recommendation methods in my mind now, so want to try them al
 * [My Code - Merchant Products Observation][14]💖
   * The data should allow to try different types of recommendation.
   * I cannot use purchase frequency to caluclate product popularity since the daily, weekly frequencies are the same for all the products. Decide to use total purchase amount for product popularity.
+  
+#### Recommendation experiments
+* [My Code - Popularity Recommendation & Forecasting][15]💖
+  * Recommend the most popular & valuable products that a merchant is missing
+  * Forecast sales in the next N days with selected recommended products
+  * Here, I didn't recommend products based on the main categories the merchaant sells, assumed the merchant sells various categories of products. Better to divide merchants into groups, to see whether need to recommend based on categories for some merchants at the same time.
 
 
 ## Future Work
@@ -113,3 +119,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [12]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/forecast_counts.ipynb
 [13]:https://peerj.com/preprints/3190.pdf
 [14]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/explore_merchant_products.ipynb
+[15]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/popularity_recommendation.ipynb
