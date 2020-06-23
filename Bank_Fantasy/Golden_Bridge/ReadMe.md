@@ -86,10 +86,15 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * I cannot use purchase frequency to caluclate product popularity since the daily, weekly frequencies are the same for all the products. Decide to use total purchase amount for product popularity.
   
 #### Recommendation experiments
+##### Popularity Recommendations
 * [My Code - Popularity Recommendation & Forecasting][15]💖
   * Recommend the most popular & valuable products that a merchant is missing
   * Forecast sales in the next N days with selected recommended products
   * Here, I didn't recommend products based on the main categories the merchaant sells, assumed the merchant sells various categories of products. Better to divide merchants into groups, to see whether need to recommend based on categories for some merchants at the same time.
+* [My Code - Group Merchants Exploration][16]💖
+  * Was trying to see whether need to target merchants based on their main selling category. But the data here doesn't need to, since the smallest merchants also sells a wide variety of products, popularity recommendation won't add obvious daily increase in the following 1 week.
+* Summary
+  * This recommendation method is easy, and since all the stores are grocery stores which sells more than thousands of products, the recommendation won't show obvious sales increase in the follwoing short term.
 
 
 ## Future Work
@@ -120,3 +125,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [13]:https://peerj.com/preprints/3190.pdf
 [14]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/explore_merchant_products.ipynb
 [15]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/popularity_recommendation.ipynb
+[16]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/popularity_group_merchant.ipynb
