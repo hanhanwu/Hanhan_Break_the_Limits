@@ -95,6 +95,13 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * Was trying to see whether need to target merchants based on their main selling category. But the data here doesn't need to, since the smallest merchants also sells a wide variety of products, popularity recommendation won't add obvious daily increase in the following 1 week.
 * Summary
   * This recommendation method is easy, and since all the stores are grocery stores which sells more than thousands of products, the recommendation won't show obvious sales increase in the follwoing short term.
+* frequent items recommendations
+  * [GSP (Generalized Sequential Pattern) vs PrefixSPAN][17]
+  * [FP-growth vs GSP][18]
+    * FP-Growth is similar to Apriori, it mines the complete set of frequent itemsets without candidate generation. FP-growth compresses the database into a frequent-pattern tree, or FP-tree based on the frequency-descending list.
+    * The GSP algorithm does the same work of Apriori algorithm, but it doesn't require finding all the frequent itemsets first.
+    * "GSP is an iterative algorithm. It scans the database number of times depending on the length of the longest frequent sequences in database. The I/O cost is substantial (large) if database contains very long frequent sequences."
+    * "PrefixSpan mines the complete set of patterns but greatly reduces the efforts of candidate sequence generation. A comprehensive performance study shows that PrefixSpan, in most cases, outperforms the apriori-based algorithm, GSP,, FreeSPAN, SPADE."
 
 
 ## Future Work
@@ -126,3 +133,5 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [14]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/explore_merchant_products.ipynb
 [15]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/popularity_recommendation.ipynb
 [16]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/popularity_group_merchant.ipynb
+[17]:https://www.ijedr.org/papers/IJEDR1403022.pdf
+[18]:https://arxiv.org/ftp/arxiv/papers/1311/1311.0350.pdf
