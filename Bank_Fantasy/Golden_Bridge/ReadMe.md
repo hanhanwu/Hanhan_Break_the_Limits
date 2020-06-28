@@ -6,8 +6,10 @@
 
 ## Prototype
 * [Click Me ❣][1]
-* Benefits
-  * It also encourages online contactless payment
+* Benefits 💝💝
+  * Helps small or medium business more, the bridge might also strength the community bonds
+  * It helps promoting online contactless payment
+  * Doesn't use individual user's identity data, proivacy with intelligence
 
 ## Implementation
 ### Data Preprocessing
