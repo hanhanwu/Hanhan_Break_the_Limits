@@ -95,7 +95,9 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * Was trying to see whether need to target merchants based on their main selling category. But the data here doesn't need to, since the smallest merchants also sells a wide variety of products, popularity recommendation won't add obvious daily increase in the following 1 week.
 * Summary
   * This recommendation method is easy, and since all the stores are grocery stores which sells more than thousands of products, the recommendation won't show obvious sales increase in the follwoing short term.
-* frequent items recommendations
+* [My Code - Frequent Itemsets Recommendation][19]💙
+  * The purpose here was to find the frequent itemsets to recommend merchants with the missing products.
+  * But both FP-growth and PrefixSPAN only got (fresh fruits, fresh vegetables) as the frequent itemsets, with low support and low confidence. This finding is already common in grocery stores, and it's not very useful to recommend them to the merchants.
   * [GSP (Generalized Sequential Pattern) vs PrefixSPAN][17]
   * [FP-growth vs GSP][18]
     * FP-Growth is similar to Apriori, it mines the complete set of frequent itemsets without candidate generation. FP-growth compresses the database into a frequent-pattern tree, or FP-tree based on the frequency-descending list.
@@ -135,3 +137,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [16]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/popularity_group_merchant.ipynb
 [17]:https://www.ijedr.org/papers/IJEDR1403022.pdf
 [18]:https://arxiv.org/ftp/arxiv/papers/1311/1311.0350.pdf
+[19]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/frequent_items_recommendations.ipynb
