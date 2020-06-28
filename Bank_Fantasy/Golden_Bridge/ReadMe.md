@@ -21,6 +21,7 @@
   * It records daily purchase $ and clients amount for each merchant, used for later time series analysis, forecasting
 * NOTE: Because of the limitation from online grocery data, there is some mockup data generated using monte carlo simulation. Such as merchant, price, purchase date. For the purpose of simplification, it also assume the sales prices for the same products is the same for each merchant.
 * [My Code][2]💖
+  * Correct - in `ts_purchase` table, clients daily count doesn't need to drop duplicates.
 
 ### Forecasting Preparation
 * The main purpose of this section is to prepare for representative sample data, and choose a forecasting method that can be shared by the merchants.
