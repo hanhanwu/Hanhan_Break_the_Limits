@@ -96,8 +96,15 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * Here, I didn't recommend products based on the main categories the merchaant sells, assumed the merchant sells various categories of products. Better to divide merchants into groups, to see whether need to recommend based on categories for some merchants at the same time.
 * [My Code - Group Merchants Exploration][16]💖
   * Was trying to see whether need to target merchants based on their main selling category. But the data here doesn't need to, since the smallest merchants also sells a wide variety of products, popularity recommendation won't add obvious daily increase in the following 1 week.
+* [My Code - Recommendation & Forecast for small business][20]💙
+  * All the merchants in the original dataset are large grocery stores, so I created a mockup small grocery store by removing those large/expensive items that most small grocery doesn't sell, and also reduced daily clients.
+  * Now the daily forecasted profits increase is obvious but forecasting looks bad.... So better not to show the forecasted daily visualization for the increase, but to show the numbers of the forecasting (avg daily profits increase, and total increase).
+
 * Summary
   * This recommendation method is easy, and since all the stores are grocery stores which sells more than thousands of products, the recommendation won't show obvious sales increase in the follwoing short term.
+  * Better to show average daily increase & total increase for forecasted profits.
+  
+##### Freuqent Itemsset Recommendations
 * [My Code - Frequent Itemsets Recommendation][19]💙
   * The purpose here was to find the frequent itemsets to recommend merchants with the missing products.
   * But both FP-growth and PrefixSPAN only got (fresh fruits, fresh vegetables) as the frequent itemsets, with low support and low confidence. This finding is already common in grocery stores, and it's not very useful to recommend them to the merchants.
@@ -141,3 +148,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [17]:https://www.ijedr.org/papers/IJEDR1403022.pdf
 [18]:https://arxiv.org/ftp/arxiv/papers/1311/1311.0350.pdf
 [19]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/frequent_items_recommendations.ipynb
+[20]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/mockup_small_business.ipynb
