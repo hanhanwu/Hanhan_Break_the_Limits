@@ -114,6 +114,20 @@ There are multiple recommendation methods in my mind now, so want to try them al
     * The GSP algorithm does the same work of Apriori algorithm, but it doesn't require finding all the frequent itemsets first.
     * "GSP is an iterative algorithm. It scans the database number of times depending on the length of the longest frequent sequences in database. The I/O cost is substantial (large) if database contains very long frequent sequences."
     * "PrefixSpan mines the complete set of patterns but greatly reduces the efforts of candidate sequence generation. A comprehensive performance study shows that PrefixSpan, in most cases, outperforms the apriori-based algorithm, GSP,, FreeSPAN, SPADE."
+    
+##### Similarity RecommendationsThe key points I'm using to calculate merchants similarity are:
+Top selled products
+Store size
+Merchant Name
+In real world, the geo distance can also be very helpful.
+In the code, the main part here is to try to use ray to do parallel processing,since the groupby of dataframes here can be slow.
+* [My Code - Calculate Merchants Similarities][21]💖
+  * The key points I'm using to calculate merchants similarity are:
+    * Top selled products
+    * Store size
+    * Merchant Name
+  * In real world, the geo distance can also be very helpful.
+  * In the code, the main part here is to try to use ray to do parallel processing,since the groupby of dataframes here can be slow.
 
 
 ## Future Work
@@ -149,3 +163,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [18]:https://arxiv.org/ftp/arxiv/papers/1311/1311.0350.pdf
 [19]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/frequent_items_recommendations.ipynb
 [20]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/mockup_small_business.ipynb
+[21]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/merchant_similarity.ipynb
