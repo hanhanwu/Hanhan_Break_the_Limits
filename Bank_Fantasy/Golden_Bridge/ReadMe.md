@@ -68,7 +68,7 @@
   * Obviously, when using moving window & Prophet, the overall results are better than fixed window and other moving window solutions, for both samples, for both historical average RMSE and forecasting RMSE. Here, I even haven't used param tuning yet.
   * Comparing with moving window solution in Holt Winters, this method could take a bit longer time. However, in real life application, we don't calculate all the previous moving windows, they are majorly used for param tuning. So should be fine.
   
-#### Forecasting Experiemnts Summary
+#### Summary
 * After all these rounds of expderiments, <b>Prophet with Moving Window solution, using logged moving average time series</b> of this dataset is better than other solutions. Being better in almost all the aspects, for both representative samples, for both forecasting rmse and historical average rmse.
 
 #### Forecast results shown to users
@@ -104,7 +104,7 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * This recommendation method is easy, and since all the stores are grocery stores which sells more than thousands of products, the recommendation won't show obvious sales increase in the follwoing short term.
   * Better to show average daily increase & total increase for forecasted profits.
   
-##### Freuqent Itemsset Recommendations
+##### Freuqent Itemset Recommendations
 * [My Code - Frequent Itemsets Recommendation][19]💙
   * The purpose here was to find the frequent itemsets to recommend merchants with the missing products.
   * But both FP-growth and PrefixSPAN only got (fresh fruits, fresh vegetables) as the frequent itemsets, with low support and low confidence. This finding is already common in grocery stores, and it's not very useful to recommend them to the merchants.
@@ -115,12 +115,8 @@ There are multiple recommendation methods in my mind now, so want to try them al
     * "GSP is an iterative algorithm. It scans the database number of times depending on the length of the longest frequent sequences in database. The I/O cost is substantial (large) if database contains very long frequent sequences."
     * "PrefixSpan mines the complete set of patterns but greatly reduces the efforts of candidate sequence generation. A comprehensive performance study shows that PrefixSpan, in most cases, outperforms the apriori-based algorithm, GSP,, FreeSPAN, SPADE."
     
-##### Similarity RecommendationsThe key points I'm using to calculate merchants similarity are:
-Top selled products
-Store size
-Merchant Name
-In real world, the geo distance can also be very helpful.
-In the code, the main part here is to try to use ray to do parallel processing,since the groupby of dataframes here can be slow.
+##### Similarity Recommendations
+* In the code, the main part here is to try to use ray to do parallel processing,since the groupby of dataframes here can be slow.
 * [My Code - Calculate Merchants Similarities][21]💖
   * The key points I'm using to calculate merchants similarity are:
     * Top selled products
@@ -128,6 +124,17 @@ In the code, the main part here is to try to use ray to do parallel processing,s
     * Merchant Name
   * In real world, the geo distance can also be very helpful.
   * In the code, the main part here is to try to use ray to do parallel processing,since the groupby of dataframes here can be slow.
+* [My Code - Similarity Recommendation][22]💖
+  * Using Collaborative Filtering for recommendation.
+    * Merchant similarity score as the weight.
+    * Choose recent N weeks most sold products as the product candidate list, excluding the most sold products of the target merchant.
+    * Using the product frequency by default
+  * If we recommend the top 7 products as popularity_recommendation method, the daily increase in this method is still higher.
+  * If we want the forecasting curve obvious, mainly need to increase the number of recommended products.
+
+#### Summary
+* Collaborative Filtering appear to be more effective in terms of daily sales increase.
+* If we want the forecasting curve obvious, mainly need to increase the number of recommended products.
 
 
 ## Future Work
@@ -141,6 +148,7 @@ In the code, the main part here is to try to use ray to do parallel processing,s
     * If we want to forecast total sales, then the predictors used in the regressor can be selected product's sales/purchase amount/etc.?
 * Using graph DB for real time recommendation.
   * After a user just bought certain items, based on geo and purchased products, recommend other items and the nearby store.
+* Explore more advanced recommendation algorithms
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
@@ -164,3 +172,4 @@ In the code, the main part here is to try to use ray to do parallel processing,s
 [19]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/frequent_items_recommendations.ipynb
 [20]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/mockup_small_business.ipynb
 [21]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/merchant_similarity.ipynb
+[22]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/similarity_recommendations.ipynb
