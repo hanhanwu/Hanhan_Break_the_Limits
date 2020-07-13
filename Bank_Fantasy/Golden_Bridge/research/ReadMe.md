@@ -1,6 +1,6 @@
 # Research Notes
 
-# Bayesian Adjusted Rating
+## Bayesian Adjusted Rating
 * [How to use bayesian adjusted rating in star system][1]
   * Star system is a system used for rating with stars, commonly using 5 stars
   * Python example
