@@ -10,6 +10,8 @@
   * Helps small or medium business more, the bridge might also strength the community bonds
   * It helps promoting online contactless payment
   * Doesn't use individual user's identity data, proivacy with intelligence
+  * Grow acceptance of digital payment
+  * Address new payments flows
 
 ## Implementation
 ### Data Preprocessing
