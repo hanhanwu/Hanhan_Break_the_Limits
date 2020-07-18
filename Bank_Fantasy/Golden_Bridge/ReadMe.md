@@ -139,6 +139,13 @@ There are multiple recommendation methods in my mind now, so want to try them al
 * If we want the forecasting curve obvious, mainly need to increase the number of recommended products.
 
 
+### Merchant Rating & Ranking
+* [My Code - Rating & Ranking][23]💖
+  * I tried 2 types of rating
+    * weekly rating without prior
+    * bayesian adjusted rating which takes previous merchant performance into consideration
+
+
 ## Future Work
 * Choose different forecasting method automatically for each merchant?
 * How to adjust model params in moving window solution?
@@ -175,3 +182,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [20]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/mockup_small_business.ipynb
 [21]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/merchant_similarity.ipynb
 [22]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/similarity_recommendations.ipynb
+[23]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/rating_and_ranking.ipynb
