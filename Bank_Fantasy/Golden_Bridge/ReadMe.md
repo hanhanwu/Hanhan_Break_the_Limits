@@ -144,6 +144,15 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * I tried 2 types of rating
     * weekly rating without prior
     * bayesian adjusted rating which takes previous merchant performance into consideration
+    
+### Client Recommendations
+* [My Code - Data Exploration][24]💖
+  * I'm planning to use collaborative filtering for product recommendation, since in this dataset, frequency pattern recommendation didn't work well.
+  * The main purpose here is to check the distribution of several main values that will be used in the collaborative filtering, to see whether it's practical, and the answer is yes!
+  * There main values include:
+    * Products Similarity
+    * Merchant Weekly Discounts
+    * Merchant Match Score
 
 
 ## Future Work
@@ -183,3 +192,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [21]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/merchant_similarity.ipynb
 [22]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/similarity_recommendations.ipynb
 [23]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/rating_and_ranking.ipynb
+[24]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/EDA_client_recommendation.ipynb
