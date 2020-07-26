@@ -17,7 +17,7 @@
 * It seems that some sillicon valley companies are creating offices in Vancouver. I just want to observe this trend and automate this observation. Won't need much data science technique but majorly data parsing.
 * [My Code][4] 💖
   
-## Bank Fantasy 🌱
+## Bank Fantasy - Golden Bridge 🍀
 <p align="center">
 <img src="https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/imgs/golden_triangle.png" width="600" height="300" />
 </p>
