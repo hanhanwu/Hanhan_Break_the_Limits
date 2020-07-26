@@ -148,11 +148,14 @@ There are multiple recommendation methods in my mind now, so want to try them al
 ### Client Recommendations
 * [My Code - Data Exploration][24]💖
   * I'm planning to use collaborative filtering for product recommendation, since in this dataset, frequency pattern recommendation didn't work well.
-  * The main purpose here is to check the distribution of several main values that will be used in the collaborative filtering, to see whether it's practical, and the answer is yes!
+  * The main purpose here is to check the distribution of several main values that will be used in products and merchant recommendations, to see whether it's practical, and the answer is yes!
   * There main values include:
     * Products Similarity
     * Merchant Weekly Discounts
     * Merchant Match Score
+* [My Code - Products & Merchants Recommendations][25]💖
+  * The similarity recommendation used here for products recommendation does bring in fun and useful results ❣
+  * The amount of money you can saved from each merchant also looks attractive!
 
 
 ## Future Work
@@ -167,6 +170,7 @@ There are multiple recommendation methods in my mind now, so want to try them al
 * Using graph DB for real time recommendation.
   * After a user just bought certain items, based on geo and purchased products, recommend other items and the nearby store.
 * Explore more advanced recommendation algorithms
+* Client segmentation with more detailed info
 
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
@@ -193,3 +197,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [22]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/similarity_recommendations.ipynb
 [23]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/rating_and_ranking.ipynb
 [24]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/EDA_client_recommendation.ipynb
+[25]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/client_recommendation.ipynb
