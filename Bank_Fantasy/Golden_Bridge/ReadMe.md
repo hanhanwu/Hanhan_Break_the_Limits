@@ -170,6 +170,8 @@ There are multiple recommendation methods in my mind now, so want to try them al
 * Using graph DB for real time recommendation.
   * After a user just bought certain items, based on geo and purchased products, recommend other items and the nearby store.
 * Explore more advanced recommendation algorithms
+  * [A hybrid method idea][26]
+    * This idea is very simple but has provided some inspiration. Besides using collaborative filtering, it's using other machine learning models for similarity score, such as KNN. In fact, in my code I'm already using distance methods for similarity score. The idea here has further broaden the future approaches a bit
 * Client segmentation with more detailed info
 
 
@@ -198,3 +200,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [23]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/rating_and_ranking.ipynb
 [24]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/EDA_client_recommendation.ipynb
 [25]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/client_recommendation.ipynb
+[26]:https://www.analyticsvidhya.com/blog/2020/08/recommendation-system-k-nearest-neighbors/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
