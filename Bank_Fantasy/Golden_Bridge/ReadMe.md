@@ -169,6 +169,8 @@ There are multiple recommendation methods in my mind now, so want to try them al
     * If we want to forecast total sales, then the predictors used in the regressor can be selected product's sales/purchase amount/etc.?
 * Using graph DB for real time recommendation.
   * After a user just bought certain items, based on geo and purchased products, recommend other items and the nearby store.
+  * [My Code - Link Prediction][27]
+    * Can use clients' visited stores as the link to do link prediction and therefore can used to recommend new stores.
 * Explore more advanced recommendation algorithms
   * [A hybrid method idea][26]
     * This idea is very simple but has provided some inspiration. Besides using collaborative filtering, it's using other machine learning models for similarity score, such as KNN. In fact, in my code I'm already using distance methods for similarity score. The idea here has further broaden the future approaches a bit
@@ -201,3 +203,4 @@ There are multiple recommendation methods in my mind now, so want to try them al
 [24]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/EDA_client_recommendation.ipynb
 [25]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/recommendation_experiments/client_recommendation.ipynb
 [26]:https://www.analyticsvidhya.com/blog/2020/08/recommendation-system-k-nearest-neighbors/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+[27]:https://github.com/hanhanwu/Hanhan_COLAB_Experiemnts/blob/master/link_prediction.ipynb
