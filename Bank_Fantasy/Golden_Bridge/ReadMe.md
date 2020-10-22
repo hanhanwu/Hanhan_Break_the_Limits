@@ -12,7 +12,7 @@
   * Doesn't use individual user's identity data, proivacy with intelligence
   * Grow acceptance of digital payment
   * Address new payments flows
-  * Potential investment opportunities
+  * Potential investment opportunities by aggregating community consumption activities
 
 ## Implementation
 ### Data Preprocessing
@@ -165,7 +165,6 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * I tried grid search above. But we can further improve efficiency by narrow down the search space along the way. Such as using the frequency of best params.
 * Federated Learning for general forecasting model
   * Each client has its local model, and there is a general model for all of them with only params exchanged for optimized results.
-  * Try community ranking for investment opportunities
 * Explore any advanced research algorithms in time series forecasting that can forecast with added products
   * One of the idea is time series regressor: https://otexts.com/fpp2/regression.html
     * If we want to forecast total sales, then the predictors used in the regressor can be selected product's sales/purchase amount/etc.?
