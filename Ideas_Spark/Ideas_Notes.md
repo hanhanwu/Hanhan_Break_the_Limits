@@ -22,6 +22,8 @@
 <img src="https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/imgs/golden_triangle.png" width="600" height="300" />
 </p>
 
+## Simple Words
+* It's a platform like stakeflow, where people ask to explain a concept in simple words, and others answer. It supposedto be fun and helpful.
   
 ## Charity Project - Traveling Security Alert
   * When people are traveling, send news about massive shooting, suicide bombing news around that location
