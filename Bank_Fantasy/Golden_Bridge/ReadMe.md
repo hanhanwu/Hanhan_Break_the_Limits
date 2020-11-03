@@ -143,8 +143,9 @@ There are multiple recommendation methods in my mind now, so want to try them al
 ### Merchant Rating & Ranking
 * [My Code - Rating & Ranking][23]💖
   * I tried 2 types of rating
-    * weekly rating without prior
-    * bayesian adjusted rating which takes previous merchant performance into consideration
+    * Weekly rating without prior
+    * Bayesian adjusted rating which takes previous merchant performance into consideration
+      * The benefit of bayesian adjusted rating is, the metric values stay consistent across merchants even though they have different sizes
     
 ### Client Recommendations
 * [My Code - Data Exploration][24]💖
