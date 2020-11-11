@@ -145,7 +145,7 @@ There are multiple recommendation methods in my mind now, so want to try them al
   * I tried 2 types of rating
     * Weekly rating without prior
     * Bayesian adjusted rating which takes previous merchant performance into consideration
-      * The benefit of bayesian adjusted rating is, the metric values stay consistent across merchants even though they have different sizes
+      * The benefit of bayesian adjusted rating is, the metric values stay consistent across merchants even though they have different sizes. It can also prevent the merchant from creating large amount of good ratings in order to reduce the impact of negative ratings, because it always checks the prior values
     
 ### Client Recommendations
 * [My Code - Data Exploration][24]💖
