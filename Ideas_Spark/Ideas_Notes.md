@@ -22,6 +22,9 @@
 <img src="https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/imgs/golden_triangle.png" width="600" height="300" />
 </p>
 
+## Sentiment Analysis on Jealousy
+* Combine the analysis on both words and behaviour, to predict the probability of people's jealousy level
+
 ## Simple Words
 * It's a platform like stakeflow, where people ask to explain a concept in simple words, and others answer. It supposedto be fun and helpful.
   
