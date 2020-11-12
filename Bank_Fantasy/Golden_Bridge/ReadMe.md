@@ -178,6 +178,9 @@ There are multiple recommendation methods in my mind now, so want to try them al
     * This idea is very simple but has provided some inspiration. Besides using collaborative filtering, it's using other machine learning models for similarity score, such as KNN. In fact, in my code I'm already using distance methods for similarity score. The idea here has further broaden the future approaches a bit
 * Client segmentation with more detailed info
 
+### Longer term future work
+* After blockchain technology makes digital currency transactions as fast as Paypal transactions, then bring in blockchain into this payment method will be more secure.
+
 
 [1]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/prototype.pdf
 [2]:https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/data_preprocessing.ipynb
