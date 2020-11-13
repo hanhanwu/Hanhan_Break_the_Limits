@@ -22,6 +22,10 @@
 <img src="https://github.com/hanhanwu/Hanhan_Break_the_Limits/blob/master/Bank_Fantasy/Golden_Bridge/imgs/golden_triangle.png" width="600" height="300" />
 </p>
 
+## Mining Tor Advertisement
+* The advertisements are full of fun there, do something :D
+* Tor browser, darkdarkgo, deepmart
+
 ## Sentiment Analysis on Jealousy
 * Combine the analysis on both words and behaviour, to predict the probability of people's jealousy level
 
